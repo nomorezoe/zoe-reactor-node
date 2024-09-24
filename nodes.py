@@ -332,7 +332,7 @@ class reactor:
         apply_patch(console_log_level)
 
         if not enabled:
-            return (input_image,face_model)
+            return (None,face_model)
         elif source_image is None and face_model is None:
             logger.error("Please provide 'source_image' or `face_model`")
             return (input_image,face_model)
